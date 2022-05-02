@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar{
+	min-height: 100px;
+	border-bottom-style: solid;
+	border-bottom-color: #e0e0eb;
+	border-width: 1px;
+	padding: 0px 15px 0px 30px;
+
+}
+.home_icon{
+	display: none;
+}
+.navbar_list ul{
+	height: 18px;
+	list-style: none;
+	margin-bottom: 1rem;
+	padding: 0;
+}
+.navbar_list ul li{
+	display: inline-block;
+		width: 120px;
+	text-align: center;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: #333032;
+}
+.ime_div{
+	text-align: center;
+}
+.ime{
+	
+font-family: Verdana, sans-serif;
+}
+.navbar_list .navlist{
+	font-size: 19px;
+	font-family: Verdana, sans-serif;
+
+}
+.navbar .navlist:hover{
+	/*#ff8080;narandzasto roze  #ffaa00 vise zuto narandzasto
+	color: #f2a60d;*/
+	 text-decoration: underline;
+}
+.navbar_list #search_icon, #search_icon2{
+	cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+.ime{
+font-size: 30px;
+}
+.navbar_list .navlist{
+	font-size: 23px;
+}
+.navbar_list #search_icon{
+	font-size: 23px;
+}
+}
+
+@media only screen and (max-width: 1050px) {
+
+.navbar_list ul{
+	padding-left: 0;
+}
+.navbar_list ul li{
+		width: 90px;
+}
+}
+@media only screen and (max-width: 890px) {
+
+.navbar{
+	padding: 0px 10px 0 20px;
+}
+
+.navbar_list ul{
+	padding-left: 0;
+}
+.navbar_list ul li{
+	display: inline-block;
+		width: 85px;
+	text-align: center;
+}
+
+.navbar_list .navlist{
+	font-size: 18px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar{
+	padding: 0px 10px 0;
+}
+.ime_div{
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+.navbar{
+	min-height: 40px;
+
+}
+.home_icon{
+	display: block;
+}
+.home_icon i{
+	padding: 7px 7px 0;
+}
+.icon_nav{
+	display: none;
+	
+}
+#search_icon{
+	display: none;
+}
+.navbar_list ul{
+	margin-bottom: 5px;
+}
+.navbar_list .navlist{
+	font-size: 18px;
+}
+.navbar_list #search_icon{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+	.navbar_list ul li{
+		width: 60px;
+}
+
+@media only screen and (max-width: 360px) {
+
+	.navbar_list ul li{
+		width: 58px;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+	.navbar{
+		padding-right: 2px;
+	}
+	.navbar_list ul li{
+		width: 50px;
+}
+
+.navbar_list .navlist{
+
+	font-size: 17px;
+}
+}

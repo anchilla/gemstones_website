@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Silmarilion Pretraga</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+ <script src="jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="search.css">
+
+	</head>
+
+<body>
+<!-- treba da da imas prazan div i u njega da stavljas nove elemente
+<div class="proizvodi">
+	<div class="image" id="div1">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/01gorskikristal1.jpg" id="prva" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(0)">
+			 <div class="text_ispod">
+      <p id="text1" class="text_slike">#</p>
+    </div></a>
+	
+
+    </div>
+</div> -->
+<div class="search_bar">
+	<button class="back_button" onclick="history.back()">Nazad</button>
+<input type="text" placeholder="Pretraži.." name="search" id="search_id" class="search_input">
+<button type="submit" id="search_button"><i class="fa fa-search" onclick="search()"></i></button>
+</div>
+<!-- ovde stavi rezultat search() -->
+<h4 class="rezultat_metode" id="rez_met"></h3>
+
+<div class="display_res" id="display_r">
+</div>
+
+<div id="zoom_div">
+	<div class="inner_zoom">
+	<span class="closeZ" onclick="closeZoom()">&times;</span>
+<img class="zoom_img" id="zoom" src="images2/nakit/ogrlice/01gorskikristal1.jpg">
+</div>
+</div>
+
+<!--ovako externi script tag, mozes ih biti vise-->
+<script src="searchScript.js"></script>
+
+	<!--<script>
+var text_ogrlice=["Gorski kristal 3100", "Labradorit-Ave. 3500", "Ogrlice 1500 - 3100", "Ogrlice 1500 - 3100", "Tirkiz-Ametist 2500", "Roze kvarc-Koral 2500", "Rodohrozit-Roze kv.", "Opsidijan-Roze kvarc", "Oniks-Opsidijan 2500", "Lapis lazuli 4500", "Lapis lazuli-Tirkiz 2500", "Lapis lazuli-Tirkiz 2100", "Koral 3100", "Hematit 2100", "Nakit od kristala", "Nakit od kristala"];
+
+
+function(){
+	//get text bod searcha to je
+	var found;
+	var search_text = document.querySelector('#searchTxt').value; //selected by id;
+	 for (i = 0; i < text_ogrlice.length; i++) {
+if(search_text.match(/search_text/g))
+//napravi novi div proizvodi sa poacima iz niza preko [i] dok ima i. moja metoda
+
+  slides[i].src= ogrlice[i];
+  texts[i].innerHTML = text_ogrlice[i];
+
+//njihova metoda za pravljenje elementa img
+		var div = document.createElement('div');
+        var img = document.createElement('img');
+        var p = document.createElement('p');
+        //src bude drugi niz sa lokacijom slike
+            img.src = ogrlice[i];
+            p.innerHTML = text_ogrlice[i];
+//stavi ih u div
+            document.getElementById('body').appendChild(img);
+}
+
+// ✅ Set Attributes on Element
+el.setAttribute('id', 'my-id');
+el.setAttribute('title', 'my-title');
+el.setAttribute('disabled', '');
+
+// ✅ Set styles on Element
+el.style.backgroundColor = 'salmon';
+el.style.color = 'white';
+el.style.width = '150px';
+el.style.height = '150px';
+
+// ✅ Add text content to element
+el.textContent = 'Hello world';
+
+// ✅ Or set the innerHTML of the element
+// el.innerHTML = `<span>Hello world</span>`;
+
+// ✅ add element to DOM
+const box = document.getElementById('box');
+box.appendChild(el);
+
+</script> -->
+
+</body>
+
+</html>

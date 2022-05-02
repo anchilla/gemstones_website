@@ -1,0 +1,506 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.naslov{
+	background:  #9D8AC7;
+  text-align: center;
+  /* url("images/drvozivotaame1.jpg")*/
+ background-image: url("images/korpa2480filter.jpg");
+  background-position: right, left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 500px;
+  padding-top: 200px;
+}
+.naslov{
+ font-family: Helvetica, sans-serif;
+}
+.naslov h1{
+	font-family: 'Times New Roman', serif;
+	color: white;
+	font-size: 70px;
+}
+.naslov p{
+	color: white;
+	font-size: 19px;
+}
+.uvod{
+		font-family: Verdana, sans-serif;
+	padding: 30px 35px 3px;
+	text-align: center;
+	/*#4dffff; jaca boja
+	background-color: #66ffff;*/
+}
+
+.uvod p{
+	padding-top: 20px;
+	font-size: 17px;
+}
+.uvod h3{
+	padding: 15px 0 10px;
+}
+.uvod hr{
+	width: 40%;
+	margin: auto;
+}
+/*
+.parallax {
+  /* The image used 
+	font-family: Verdana, sans-serif;
+  /* Full height 
+  height: 100%; 
+  /* Create the parallax scrolling effect 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   text-align: center; 
+}*/
+.proizvodi{
+		font-family: Verdana, sans-serif;
+	margin: 10px auto 30px;
+	width: 90%;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.proizvodi .image{
+	position: relative;
+	margin: 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 30%;
+	
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.proizvodi .text_ispod{
+bottom: 0;
+}
+.text_ispod p{
+		font-size: 17px;
+		text-align: center;
+	margin: 0;
+	padding: 10px 0;
+
+
+}
+.image img{
+	max-width: 100%;
+	max-height: 90%;
+	object-fit: cover;
+	background-color: #9D8AC7;
+}
+.image img:hover{
+	opacity: 0.7;
+
+}
+.image a{
+	text-decoration: none;
+	color: black;
+}
+
+.o_nama{
+	/*#a3a3c2; sivo ljubicasta  #3e2673; tamno ljubicasta  #9D8AC7 lepa ljubic
+	#669999; zad zelena   #59a6a6 svetlija zelena   #609f9f; zelena izm ove dve
+	
+	background-color:#9D8AC7;*/
+	font-family: Verdana, sans-serif;
+	padding: 30px 40px;
+/*	background-image: url("images/korpa2481filter.jpg");
+	background-size: 100%;*/
+	
+}
+.onama_text{
+	text-align: center;
+	width: 55%;
+	float: left;
+	font-size: 19px;
+}
+.o_nama h1{
+	/*color: white;*/
+}
+.o_nama hr{
+	width: 25%;
+	margin: auto;
+	/*background-color: white;*/
+}
+.o_nama p{
+	padding-top: 25px;
+	/*color: white;*/
+}
+.o_nama img{
+	width: 40%;
+float: right;
+}
+
+.o_nama::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+footer{
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	border-top-style: solid;
+	border-top-color: #e0e0eb;
+	border-width: 1px;
+}
+footer p{
+	padding: 20px 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+footer p a{
+		text-decoration: none;
+	color: #14141f;
+}
+.footer_kontakt{
+	padding: 25px 0;
+	   line-height: 200%;
+}
+.insta:hover{
+	text-decoration: underline;
+	color: #14141f;
+}
+.back{
+	font-family: Verdana, sans-serif;
+	text-align: center;
+		padding: 20px 0;
+}
+.backtop{
+	right: 0;
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+}
+.backtop:hover{
+	color: black;
+	text-decoration: underline black;
+}
+
+/*IE10+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+.navbar{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+.naslov h1{
+	font-size: 80px;
+}
+.naslov p{
+	color: white;
+	font-size: 23px;
+}
+.uvod p{
+	font-size: 21px;
+}
+.uvod h3{
+	font-size: 29px;
+}
+.uvod hr{
+	width: 15%;
+	margin: auto;
+}
+.text_ispod p{
+	font-size: 20px;
+	padding: 20px 0;
+}
+.o_nama h1{
+	font-size: 50px;
+}
+.onama_text{
+	font-size: 21px;
+}
+.o_nama img{
+	width: 35%;
+	padding-right: 80px;
+}
+footer p{
+	font-size: 19px;
+}
+.backtop{
+	font-size: 20px;
+}
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+	.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 35%;
+}
+.proizvodi{
+	width: 99%;
+	padding: 15px;
+}
+
+.proizvodi .image{
+	margin: 10px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 17px;
+
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 18px;
+}
+.o_nama img{
+	width: 100%;
+float: bottom;
+padding: 20px;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.naslov{
+  min-height: 350px;
+  padding-top: 120px;
+}
+.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 50%;
+}
+.proizvodi{
+	width: 99%;
+	padding: 15px;
+}
+
+.proizvodi .image{
+	margin: 10px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 16px;
+}
+.o_nama img{
+	width: 100%;
+float: bottom;
+padding: 20px;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+footer p{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 570px) {
+
+	.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+.o_nama{
+  display: block;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	top: 0;
+	font-size: 16px;
+}
+.o_nama img{
+	width: 100%;
+bottom: 0;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+}
+
+@media only screen and (max-width: 488px) {
+.naslov{
+	 min-height: 250px;
+  padding-top: 70px;
+	}
+.naslov h1{
+	font-size: 60px;
+}
+	.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 80%;
+}
+.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 16px;
+}
+.o_nama img{
+	width: 100%;
+float: bottom;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+footer p{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+
+.naslov{
+	 min-height: 200px;
+  padding-top: 50px;
+	}
+.naslov h1{
+	font-size: 55px;
+}
+.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 85%;
+}
+
+.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 14px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 16px;
+}
+.o_nama img{
+	width: 100%;
+float: bottom;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+footer p{
+	font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.naslov{
+	 min-height: 160px;
+  padding-top: 40px;
+	}
+.naslov h1{
+	font-size: 45px;
+}
+.naslov p{
+	font-size: 17px;
+}
+
+.uvod h3{
+	font-size: 20px;
+}
+.uvod hr{
+	width: 80%;
+}
+.uvod p{
+	display: none;
+}
+.proizvodi{
+	width: 95%;
+}
+
+.proizvodi .image{
+	margin: 7px;
+	width: 90%;
+}
+
+.text_ispod p{
+		font-size: 14px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 15px;
+}
+.o_nama img{
+	width: 100%;
+float: bottom;
+}
+.o_nama{
+	padding: 30px 20px;
+}
+
+.backtop{
+	font-size: 16px;
+}
+footer p{
+	font-size: 14px;
+}
+}
+

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Silmarilion</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="nakitMenu.css">
+
+  <script src="jquery-3.6.0.js"></script>
+	</head>
+
+<body>
+
+	<div class="navbar" id="navbar">
+		
+<div class="home_icon">
+		<a href="index.html">
+<i class="fa fa-home" aria-hidden="true"></i>
+</a>
+	<a href="kontakt.html">
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+</a>
+<i id="search_icon2" class="fa fa-search" onclick="openSearch()"></i>
+	</div>
+	
+<div class="navbar_list icon_nav">
+
+		<ul>
+		<li><a href="index.html" class="navlist"><small>Početna</small></a></li>
+		<li><a href="index.html#onama" class="navlist"><small>O nama</small></a></li>
+		<li><a href="kontakt.html" class="navlist"><small>Kontakt</small></a></li>
+</ul>
+</div>
+
+	<div class="ime_div">
+	<h3><a href="index.html" class="ime">Silmarilion</a></h3>
+</div>
+
+	<div class="navbar_list">
+		<ul>
+		
+		<li><a href="kristali.html" class="navlist"><small>Kristali</small></a></li>
+		<li><a href="nakit.html" class="navlist"><small>Nakit</small></a></li>
+		<li><a href="koza.html" class="navlist"><small>Ostalo</small></a></li>
+		<i id="search_icon" class="fa fa-search" onclick="openSearch()"></i>
+	</ul>
+	</div>
+</div>
+
+<div class="naslov">
+	<!--<img src="images/ametistdr4.jpg"> -->
+		<h1>Ogrlice</h1>
+	</div>
+
+
+<div class="proizvodi">
+	<div class="image" id="div1">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/01gorskikristal1.jpg" id="prva" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(0)">
+			 <div class="text_ispod">
+      <p id="text1" class="text_slike">Gorski kristal 3100</p>
+    </div></a>
+	
+    </div>
+
+    <div class="image" id="div2">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/02labradoritaventurin.jpg" id="druga" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(1)">
+			 <div class="text_ispod">
+      <p id="text2" class="text_slike">Labradorit-Ave. 3500</p>
+    </div></a>
+	
+    </div>
+
+    <div class="image" id="div3">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/03ogrlice.jpg" id="treca" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(2)">
+			 <div class="text_ispod">
+      <p id="text3" class="text_slike">Ogrlice 1500 - 3100</p>
+    </div></a>
+	
+    </div>
+
+    <div class="image" id="div4">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/04zadmes.jpg" id="cetvrta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(3)" >
+			 <div class="text_ispod">
+      <p id="text4" class="text_slike">Ogrlice 1500 - 3100</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div5">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/05tirkizametist.jpg" id="peta" class="prod_image" alt="proizvodi"  onclick="openModal();currentSlide(4)">
+			 <div class="text_ispod">
+      <p id="text5" class="text_slike">Tirkiz-Ametist 2500</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div6">
+			<a href="#">
+			<img src= "images2/nakit/ogrlice/06rozekvarckoral.jpg" id="sesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(5)">
+			 <div class="text_ispod">
+      <p id="text6" class="text_slike">Roze kvarc-Koral 2500</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div7">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/07rodohrozitrozekvarc1.jpg" id="sedma" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(6)">
+			 <div class="text_ispod">
+      <p id="text7" class="text_slike">Rodohrozit-Roze kv</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div8">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/08opsidijanrozekvarc.jpg" id="osma" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(7)">
+			 <div class="text_ispod">
+      <p id="text8" class="text_slike">Opsidijan-Roze kvarc</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div9">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/09oniksopsidijan.jpg" id="deveta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(8)">
+			 <div class="text_ispod">
+      <p id="text9" class="text_slike">Oniks-Opsidijan 2500</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div10">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/10lapislazuli2.jpg" id="deseta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(9)">
+			 <div class="text_ispod">
+      <p id="text10" class="text_slike">Lapis lazuli 4500</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div11">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/11lapistirkiz.jpg" id="jedanesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(10)">
+			 <div class="text_ispod">
+      <p id="text11" class="text_slike">Lapis lazuli-Tirkiz 2500</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div12">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/12lapistirkiz1.jpg" id="dvanesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(11)">
+			 <div class="text_ispod">
+      <p id="text12" class="text_slike">Lapis lazuli-Tirkiz 2100</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div13">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/13koral1.jpg" id="trinesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(12)">
+			 <div class="text_ispod">
+      <p id="text13" class="text_slike">Koral 3100</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div14">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/14hematit1.jpg" id="cetrnesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(13)">
+			 <div class="text_ispod">
+      <p id="text14" class="text_slike">Hematit 2100</p>
+    </div></a>
+	    </div>
+
+     <div class="image" id="div15">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/15polica2.jpg" id="petnesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(14)">
+			 <div class="text_ispod">
+      <p id="text15" class="text_slike">Nakit od kristala</p>
+    </div></a>
+	
+    </div>
+
+     <div class="image" id="div16">
+			<a href="#">
+			<img src="images2/nakit/ogrlice/16polica3.jpg" id="sesnesta" class="prod_image" alt="proizvodi" onclick="openModal();currentSlide(15)">
+			 <div class="text_ispod">
+      <p id="text16" class="text_slike">Nakit od kristala</p>
+    </div></a>
+	
+    </div>
+
+</div>
+
+<div class="buttons">
+	<button onclick="newPicture(this)" role="button" id="prev" class="button round">&#8249;</button>
+	<p id="demo"><b>1</b> 2 3 4</p>
+	<button  onclick="newPicture(this)" role="button" id="next" class="button round">&#8250; </button>
+	</div>
+
+
+			<div class="back">
+<a href="#navbar" class="backtop"><small>Vrati se na početak</small></a>
+	</div>
+
+<div id="myLightbox" class="lightbox">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="inner_light">
+
+  	 <div class="mySlides">
+      <p id="slide_text" class="slika_text">#</p>
+      <img id="imgSlide" src="#" >
+    </div>
+
+
+	<a class="prev" onclick="prevNextSlide(-1)">&#10094;</a>
+    <a class="next" onclick="prevNextSlide(1)">&#10095;</a>
+
+    <i id="exsp" class="fa fa-expand" aria-hidden="true" onclick="expand()"></i>
+
+</div>
+</div>
+
+
+
+		<footer>
+			<p class="footer_kontakt"><br>E-mail: kristalisilmarilion@gmail.com<br>
+			Instagram: <a class="insta" href="https://www.instagram.com/kristali_silmarilion/?hl=en">@kristali_silmarilion</a></p>
+			<p>Copyright 2022 © Silmarilion. All rights reserved.</p>
+		</footer>
+
+<script>
+	
+var brojac=1;
+var lastPage;
+
+
+var ogrlice=["images2/nakit/ogrlice/01gorskikristal1.jpg", "images2/nakit/ogrlice/02labradoritaventurin.jpg", "images2/nakit/ogrlice/03ogrlice.jpg", "images2/nakit/ogrlice/04zadmes.jpg", "images2/nakit/ogrlice/05tirkizametist.jpg", "images2/nakit/ogrlice/06rozekvarckoral.jpg", "images2/nakit/ogrlice/07rodohrozitrozekvarc1.jpg", "images2/nakit/ogrlice/08opsidijanrozekvarc.jpg", "images2/nakit/ogrlice/09oniksopsidijan.jpg", "images2/nakit/ogrlice/10lapislazuli2.jpg", "images2/nakit/ogrlice/11lapistirkiz.jpg", "images2/nakit/ogrlice/12lapistirkiz1.jpg", "images2/nakit/ogrlice/13koral1.jpg", "images2/nakit/ogrlice/14hematit1.jpg", "images2/nakit/ogrlice/15polica2.jpg", "images2/nakit/ogrlice/16polica3.jpg", "images2/nakit/ogrlice/17cadjavaclapis1.jpg", "images2/nakit/ogrlice/18ametist3.jpg", "images2/nakit/ogrlice/19ametistsedef.jpg", "images2/nakit/ogrlice/20dsc00971.jpg", "images2/nakit/ogrlice/21dsc00972.jpg", "images2/nakit/ogrlice/22ametist4.jpg", "images2/nakit/ogrlice/23gorski_kristal2.jpg", "images2/nakit/ogrlice/24meseeva_reka.jpg", "images2/nakit/ogrlice/25g6.jpg", "images2/nakit/ogrlice/26g7.jpg", "images2/nakit/ogrlice/27hematitgranat.jpg", "images2/nakit/ogrlice/28karneol3.jpg", "images2/nakit/ogrlice/29karneol11.jpg", "images2/nakit/ogrlice/30lapis.jpg", "images2/nakit/ogrlice/31lapis2.jpg", "images2/nakit/ogrlice/32mix1.jpg", "images2/nakit/ogrlice/33mix11.jpg", "images2/nakit/ogrlice/34mix2.jpg", "images2/nakit/ogrlice/35mix3.jpg", "images2/nakit/ogrlice/36mix4.jpg", "images2/nakit/ogrlice/37mix5.jpg", "images2/nakit/ogrlice/38mix7.jpg", "images2/nakit/ogrlice/39mix8.jpg", "images2/nakit/ogrlice/40mix6.jpg", "images2/nakit/ogrlice/41mix9.jpg", "images2/nakit/ogrlice/42mix10.jpg", "images2/nakit/ogrlice/43rozekvarc3.jpg", "images2/nakit/ogrlice/44rozekvarc12.jpg", "images2/nakit/ogrlice/45fluorit5.jpg", "images2/nakit/ogrlice/46epidotunakit1.jpg", "images2/nakit/ogrlice/47cilibarzabebe1.jpg", "images2/nakit/ogrlice/48cilibarzabebe.jpg","images2/nakit/ogrlice/49cilibar5.jpg", "images2/nakit/ogrlice/50ametist12.jpg", "images2/nakit/ogrlice/51ametist7.jpg"];
+var text_ogrlice=["Gorski kristal 3100", "Labradorit-Ave. 3500", "Ogrlice 1500 - 3100", "Ogrlice 1500 - 3100", "Tirkiz-Ametist 2500", "Roze kvarc-Koral 2500", "Rodohrozit-Roze kv.", "Opsidijan-Roze kvarc", "Oniks-Opsidijan 2500", "Lapis lazuli 4500", "Lapis lazuli-Tirkiz 2500", "Lapis lazuli-Tirkiz 2100", "Koral 3100", "Hematit 2100", "Nakit od kristala", "Nakit od kristala", "Čađavac-Lapis 3100","Ametist 2500", "Ametist-Sedef 1500","Rodonit-Roze kvarc","Rodonit-Roze kvarc 3500","Ametist 3500","Gorski kristal (kvarc)","Mesečeva reka 3500","Gorski kristal 4900","Ogrlice od 1500","Hematit-biseri 1600","Karneol 2100 din","Karneol 2100 din","Lapis 4500 din","Lapis 4500 din","Ogrlice 2100 din", "Ogrlice od 1500","Ogrlice 2100 din",
+"Ogrlice 2500 din","Nakit od kristala","Nakit od kristala","Nakit od kristala","Nakit od kristala","Ametist-tigrovo oko","Nakit od kristala","Nakit od kristala","Roze kvarc-srebro 4900","Roze kvarc-srebro 4900","Fluorit 2500 din","Epidot unakit 1600","Ćilibar za bebe 2500","Ćilibar za bebe 2500", "Ćilibar 1200 din",
+"Ametist od 1600 din",
+"Ametist 2500 din"];
+
+var obradjeni_kris=["images2/kristali/obradjeni/100selenit.jpg", "images2/kristali/obradjeni/101septari.jpg", "images2/kristali/obradjeni/102svalerit_1.jpg", "images2/kristali/obradjeni/103smaragd.jpg", "images2/kristali/obradjeni/104sodalit.jpg", "images2/kristali/obradjeni/105sokolovooko.jpg", "images2/kristali/obradjeni/106stromatolit.jpg", "images2/kristali/obradjeni/107sugilit1.jpg", "images2/kristali/obradjeni/108suncevkamen.jpg", "images2/kristali/obradjeni/109tektit.jpg", "images2/kristali/obradjeni/10bakarni_nugat1.jpg", "images2/kristali/obradjeni/110tigrovogvozdje.jpg", "images2/kristali/obradjeni/111tigrovooko.jpg", "images2/kristali/obradjeni/112tigrovookocrveno.jpg", "images2/kristali/obradjeni/113tirkiz.jpg", "images2/kristali/obradjeni/114topazimperijalzlatni.jpg", "images2/kristali/obradjeni/115topazplavi.jpg", "images2/kristali/obradjeni/116turmalin.jpg", "images2/kristali/obradjeni/117turmalinlubenica.jpg", "images2/kristali/obradjeni/118turmalinzeleni.jpg", "images2/kristali/obradjeni/119uleksit.jpg", "images2/kristali/obradjeni/11brazilijanit.jpg", "images2/kristali/obradjeni/120vezuvijan.jpg", "images2/kristali/obradjeni/121zeolit_2.jpg", "images2/kristali/obradjeni/122zoisit.jpg", "images2/kristali/obradjeni/123ahatsivi21.jpg", "images2/kristali/obradjeni/124hromdiopsid1.jpg", "images2/kristali/obradjeni/125kobaltkalcit1.jpg", "images2/kristali/obradjeni/126plavispinel1.jpg", "images2/kristali/obradjeni/127riolit1.jpg", "images2/kristali/obradjeni/128rodohrozit2.jpg", "images2/kristali/obradjeni/129smitsonit1.jpg", "images2/kristali/obradjeni/12bronzit1.jpg", "images2/kristali/obradjeni/130sungit1.jpg", "images2/kristali/obradjeni/131vanadinit2.jpg", "images2/kristali/obradjeni/13biser1.jpg", "images2/kristali/obradjeni/14azuritmalahit1.jpg", "images2/kristali/obradjeni/15azurit1.jpg", "images2/kristali/obradjeni/16ngelit1.jpg", "images2/kristali/obradjeni/17aventurinplavi1.jpg", "images2/kristali/obradjeni/18aventurinzeleni1.jpg", "images2/kristali/obradjeni/19aragonit1.jpg", "images2/kristali/obradjeni/1ametist1.jpg", "images2/kristali/obradjeni/20apofilit1.jpg", "images2/kristali/obradjeni/21apatit1.jpg", "images2/kristali/obradjeni/22ametrin1.jpg", "images2/kristali/obradjeni/23celestin.jpg", "images2/kristali/obradjeni/24citrin.jpg", "images2/kristali/obradjeni/25dimnikvarccadjavac1.jpg", "images2/kristali/obradjeni/26caroit.jpg", "images2/kristali/obradjeni/27cilibar2.jpg", "images2/kristali/obradjeni/28danburit.jpg", "images2/kristali/obradjeni/29dijamant_herkimer.jpg", "images2/kristali/obradjeni/2amazonit.jpg", "images2/kristali/obradjeni/30dioptaz.jpg", "images2/kristali/obradjeni/31disten_kijanit.jpg", "images2/kristali/obradjeni/32dolomit.jpg", "images2/kristali/obradjeni/33dumortijerit.jpg", "images2/kristali/obradjeni/34epidotunakit.jpg", "images2/kristali/obradjeni/35fluorit.jpg", "images2/kristali/obradjeni/36fuksit.jpg", "images2/kristali/obradjeni/37galenit.jpg", "images2/kristali/obradjeni/38girasolkvarc.jpg", "images2/kristali/obradjeni/39gorskikristalkvarc1.jpg", "images2/kristali/obradjeni/3aleksandrit.jpg", "images2/kristali/obradjeni/40granat1.jpg", "images2/kristali/obradjeni/41halkopirit.jpg", "images2/kristali/obradjeni/42heliotrop2.jpg", "images2/kristali/obradjeni/43hematit.jpg", "images2/kristali/obradjeni/44hijastolitandaluzit.jpg", "images2/kristali/obradjeni/45houlit.jpg", "images2/kristali/obradjeni/46hrisopras.jpg", "images2/kristali/obradjeni/47hrizokola.jpg", "images2/kristali/obradjeni/48jaspisbresa.jpg", "images2/kristali/obradjeni/49jaspiscrveni.jpg", "images2/kristali/obradjeni/4alabaster.jpg", "images2/kristali/obradjeni/50jaspisdalmatinac.jpg", "images2/kristali/obradjeni/51jaspisduga.jpg", "images2/kristali/obradjeni/52jaspisleopard.jpg", "images2/kristali/obradjeni/53jaspisokean.jpg", "images2/kristali/obradjeni/54jaspiszuti.jpg", "images2/kristali/obradjeni/55kalcedon.jpg", "images2/kristali/obradjeni/56kalcedonroze_4789.jpg", "images2/kristali/obradjeni/57kalcit_crvenonarandzasti.jpg", "images2/kristali/obradjeni/58kalcitnarandzasti.jpg", "images2/kristali/obradjeni/59kalcitplavi.jpg", "images2/kristali/obradjeni/5akvamarin.jpg", "images2/kristali/obradjeni/60kalcit_zeleni.jpg", "images2/kristali/obradjeni/61karneol.jpg", "images2/kristali/obradjeni/62koral.jpg", "images2/kristali/obradjeni/63kunzit.jpg", "images2/kristali/obradjeni/64labradorit.jpg", "images2/kristali/obradjeni/65lapislazuli.jpg", "images2/kristali/obradjeni/66larimar.jpg", "images2/kristali/obradjeni/67lepidolit.jpg", "images2/kristali/obradjeni/68magnetit.jpg", "images2/kristali/obradjeni/69magnezit.jpg", "images2/kristali/obradjeni/6ahatroze.jpg", "images2/kristali/obradjeni/70malahit.jpg", "images2/kristali/obradjeni/71mesecevkamen.jpg", "images2/kristali/obradjeni/72mlecnikvarc.jpg", "images2/kristali/obradjeni/73moldavit.jpg", "images2/kristali/obradjeni/74morganit.jpg", "images2/kristali/obradjeni/75mookait.jpg", "images2/kristali/obradjeni/76mokije.jpg", "images2/kristali/obradjeni/77nebula.jpg", "images2/kristali/obradjeni/78okamenjenodrvo.jpg", "images2/kristali/obradjeni/79okamenjenikoral.jpg", "images2/kristali/obradjeni/7ahatmahovina.jpg", "images2/kristali/obradjeni/80opal_dendritski.jpg", "images2/kristali/obradjeni/81opal.jpg", "images2/kristali/obradjeni/82opalit.jpg", "images2/kristali/obradjeni/83apacevasuzadimniopsidijan.jpg", "images2/kristali/obradjeni/84opsidijanmahagoni.jpg", "images2/kristali/obradjeni/85opsidijanpahuljsti.jpg", "images2/kristali/obradjeni/86petalit.jpg", "images2/kristali/obradjeni/87peridotolivin.jpg", "images2/kristali/obradjeni/88pikasomermer.jpg", "images2/kristali/obradjeni/89pirit.jpg", "images2/kristali/obradjeni/8ahatbeli.jpg", "images2/kristali/obradjeni/90pitersit.jpg", "images2/kristali/obradjeni/91prazem.jpg", "images2/kristali/obradjeni/92prehnit.jpg", "images2/kristali/obradjeni/93rodohrozit.jpg", "images2/kristali/obradjeni/94rodonit.jpg", "images2/kristali/obradjeni/95rozekvarc.jpg", "images2/kristali/obradjeni/96rubin.jpg", "images2/kristali/obradjeni/97rutilkvarc.jpg", "images2/kristali/obradjeni/98safir.jpg", "images2/kristali/obradjeni/99sardoniks.jpg", "images2/kristali/obradjeni/9dendritskiahat.jpg"];
+var text_obr_kris=["Ametist od 150 do 400 din.",
+"Amazonit od 170 do 400 din.",
+"Aleksandrit od 8.000 do 10.000 din.",
+"Alabaster od 350 do 450 din.",
+"Akvamarin od 300 do 500 din.",
+"Ahat roze od 200 do 1500 din",
+"Ahat mahovina do 350",
+"Ahat beli od 150 din.",
+"Ahat dendritski 400 d.",
+
+
+"Bakar čist od 250 din",
+"Brazilijanit 1800 din",
+"Bronzit od 170 do 400 din",
+"Biser",
+"Azurit-Malahit 2.500",
+"Azurit 2.200 dinara",
+"Angelit 350 din.",
+"Aventurin plavi 150 do 300 d.",
+"Aventurin 200 do 400",
+
+
+"Aragonit 350 din.",
+"Apofilit 650 din.",
+"Apatit 220 din.",
+"Ametrin 650 din.",
+"Celestin 2300 din.",
+"Citrin 300 din.",
+"Čađavac 200 - 400",
+"Čaroit 1 gr=100 din.",
+"Ćilibar 300 - 900 din.",
+
+
+"Danburit 800 din.",
+"Dijamant Herkimer",
+"Dioptaz 2500 din.",
+"Disten (Kijanit) 2100",
+"Dolomit 150 din.",
+"Dumortijerit 400 din.",
+"Epidot unakit 300 din.",
+"Fluorit 250 - 450 din.",
+"Fuksit 400 din.",
+
+
+"Galenit nema cenu",
+"Girasol kvarc 250",
+"Gorski kristal 150-400",
+"Granat 300 din.",
+"Halkopirit 700 din.",
+"Heliotrop 150 - 400",
+"Hematit 300 din.",
+"Hijastolit (Andaluzit) 1500",
+"Houlit 150 din.",
+
+
+"Hrizopras 300 din.",
+"Hrizokola 1600",
+"Jaspis breša 150 din.",
+"Jaspis crveni 150-400",
+"Jaspis dalmatinac 150",
+"Jaspis duga 400 din",
+"Jaspis leopard 150 din.",
+"Jaspis okean 400 din.",
+"Jaspis žuti 200 din.",
+
+
+"Kalcedon 250 - 350",
+"Kalcedon roze 250",
+"Kalcit crv.-naran. 150",
+"Kalcit naranđžasti 400",
+"Kalcit plavi 350 din.",
+"Kalcit zeleni 700",
+"Karneol 200 - 350",
+"Koral 500 - 800",
+"Kunzit 1400 din",
+
+
+"Labradorit 350 din",
+"Lapis lazuli 250 - 350",
+"Larimar 1800 din",
+"Lepidolit 400 din",
+"Magnetit 300 din",
+"Magnezit 300 din",
+"Malahit 300-400 din",
+"Mesečev kamen do 300 din",
+"Mlečni kvarc 170 din",
+
+
+"Moldavit 1200din/ gr",
+"Morganit 2400 din",
+"Mookait 200 din",
+"Mokije od 1100 din",
+"Nebula 220 din",
+"Okamenjeno drvo 300 din",
+"Okamenjeni koral 350 din",
+"Opal dendritski",
+
+
+"Opal australijski 4500",
+"Opalit 250 din",
+"Opsidijan dimni 450",
+"Opsidijan mahagoni 350 din",
+"Opsidijan pahuljasti 150 din",
+"Petalit 350,00 dinara",
+"Peridot (olivin) od 1200 din",
+"Pikaso mermer 220 din",
+"Pirit 400 din",
+
+
+"Pitersit 1600 din",
+"Prazem 350 din",
+"Prehnit 400 din",
+"Rodohrozit 900 din",
+"Rodonit 150-350 din",
+"Roze kvarc 150-350 din",
+"Rubin od 700 din",
+"Rutil kvarc 250 din",
+"Safir od 1000 din",
+
+
+"Sardoniks 150 din",
+"Selenit od 150-2000",
+"Septari do 1800 din",
+"Sfalerit",
+"Smaragd od 1200 din",
+"Sodalit 150 din",
+"Sokolovo oko 300 din",
+"Stromatolit 330 din",
+"Sugilit 1600 din",
+
+
+"Sunčev kamen do 300",
+"Tektit od 1200 din",
+"Tigrovo oko 150-300",
+"Tigrovo oko cr. 150",
+"Tirkiz 450 din",
+"Topaz zlatni 2400 din",
+"Topaz plavi 2100 din",
+"Turmalin crni do 400 din",
+
+
+"Turmalin lubenica 2100 din",
+"Turmalin zeleni 2100 din",
+"Uleksit 350-700 dinara",
+"Vezuvijan 900 din",
+"Zeolit kristal do 2200",
+"Zoisit 400 din",
+"Ahat sivi od 200-1500",
+"Hrom diopsid",
+"Kobalt kalcit",
+
+
+"Spinel plavi",
+"Riolit",
+"Rodohrozit",
+"Smitsonit",
+"Sungit",
+"Vanadinit"];
+
+/*Save Data to Session Storage
+sessionStorage.setItem("key", "value");
+Read Data from Session Storage
+let lastname = sessionStorage.getItem("key");
+*/
+
+var niz;
+var text_niz;
+let kategorija = location.search.substring(1);
+ var slides = document.getElementsByClassName("prod_image");
+  var texts = document.getElementsByClassName("text_slike");
+
+window.onload = function setNiz(){
+	if(kategorija=="sir_kristali"){
+		niz=ogrlice;
+		text_niz=text_ogrlice;
+		lastPage=4;
+	}
+	if(kategorija=="obr_kristali"){
+	niz=obradjeni_kris;
+	text_niz=text_obr_kris;
+	lastPage=9;
+}
+for (i = 0; i < slides.length; i++) {
+  slides[i].src= niz[i];
+  texts[i].innerHTML = text_niz[i];
+ 		}
+ document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+
+
+	function newPicture(event){
+
+   var divs = document.getElementsByClassName("image");
+  var slides = document.getElementsByClassName("prod_image");
+  var texts = document.getElementsByClassName("text_slike");
+ 
+
+if(event.id=="prev"){
+	  		for (i = 0; i < divs.length; i++) {
+  			 if((divs[i].style.display) == "none"){
+  			 	divs[i].style.display = "block";
+  }
+}
+	if(brojac == 2){
+
+  for (i = 0; i < slides.length; i++) {
+  slides[i].src= niz[i];
+  texts[i].innerHTML = text_niz[i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+		if(brojac == 3){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[16+i];
+  texts[i].innerHTML = text_niz[16+i];
+ 		}
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+		if(brojac == 4){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[32+i];
+  texts[i].innerHTML = text_niz[32+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+		if(brojac == 5){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[48+i];
+  texts[i].innerHTML = text_niz[48+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+if(brojac == 6){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[64+i];
+  texts[i].innerHTML = text_niz[64+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+if(brojac == 7){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[80+i];
+  texts[i].innerHTML = text_niz[80+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+if(brojac == 8){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[96+i];
+  texts[i].innerHTML = text_niz[96+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+if(brojac == 9){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[112+i];
+  texts[i].innerHTML = text_niz[112+i];
+ 		}
+
+brojac--;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+}
+
+/*if((event.id=="next") && (brojac-1) == lastPage){
+		alert(brojac == lastPage);
+
+		alert("brojac je "+brojac+" deo za posl. str");
+	alert((brojac-1) == lastPage);
+	calcLastPage();
+	return;
+}*/
+
+if(event.id=="next"){
+	if((brojac+1) == lastPage){
+		calcLastPage();
+		document.getElementById("demo").innerHTML = "Stranica "+lastPage+ " od "+lastPage;
+		brojac++;
+	return;
+	}
+
+		if(brojac == 1){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[16+i];
+  texts[i].innerHTML = text_niz[16+i];
+ 		}
+
+		brojac++;
+		document.getElementById("demo").innerHTML =  "Stranica "+brojac+ " od "+lastPage;
+		return;
+		}
+		if(brojac == 2){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[32+i];
+  texts[i].innerHTML = text_niz[32+i];
+ 		}
+
+brojac++;
+
+
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 3){
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[48+i];
+  texts[i].innerHTML = text_niz[48+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 4){
+
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[64+i];
+  texts[i].innerHTML = text_niz[64+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 5){
+
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[80+i];
+  texts[i].innerHTML = text_niz[80+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 6){
+
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[96+i];
+  texts[i].innerHTML = text_niz[96+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 7){
+
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[112+i];
+  texts[i].innerHTML = text_niz[112+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+if(brojac == 8){
+
+		  for (i = 0; i < slides.length; i++) {
+		
+  slides[i].src= niz[128+i];
+  texts[i].innerHTML = text_niz[128+i];
+ 		}
+brojac++;
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+return;
+}
+
+}
+}
+
+function openModal() {
+  document.getElementById("myLightbox").style.display = "block";
+}
+
+function calcLastPage(){
+	var slides = document.getElementsByClassName("prod_image");
+  var texts = document.getElementsByClassName("text_slike");
+  var divs = document.getElementsByClassName("image");
+
+    	var prosliIndexi = (lastPage - 1) * 16;
+    	var ostatak = niz.length - prosliIndexi;
+    	for(var i = 0;i < ostatak;i++){
+    		 slides[i].src= niz[prosliIndexi+i];
+  texts[i].innerHTML = text_niz[prosliIndexi+i];
+}
+  	for(var i = ostatak;i < slides.length;i++){
+   divs[i].style.display = "none";
+}
+document.getElementById("demo").innerHTML = "Stranica "+brojac+ " od "+lastPage;
+}
+
+/*za lightbox*/
+var slideIndex = 1;
+var ph = document.getElementById("imgSlide");
+var ph_txt= document.getElementById("slide_text");
+
+function currentSlide(index) {
+
+slideIndex=index;
+	var lastItem;
+	var prosliIndexi = (brojac - 1) * 16;
+var lastItem = prosliIndexi + index + 1;
+//alert("komparacija:"+(lastItem> (ogrlice.length)));
+
+if (lastItem > (niz.length)) {
+		index=index -1;
+	slideIndex=index;
+	return;
+}
+
+ switch(brojac){
+ 	case 1:
+if(index <0){
+	index=0;
+	slideIndex=0;
+	}
+ ph.src=niz[index];
+ph_txt.innerHTML=text_niz[index];
+break;
+case 2:
+ph.src=niz[prosliIndexi + index];
+ph_txt.innerHTML=text_niz[prosliIndexi + index];
+ break;
+ case 3:
+ph.src=niz[prosliIndexi +index];
+ph_txt.innerHTML=text_niz[prosliIndexi + index];
+ break;
+ case 4:
+ph.src=niz[prosliIndexi + index];
+ph_txt.innerHTML=text_niz[prosliIndexi + index];
+ break;
+}
+}
+
+  function closeModal() {
+  document.getElementById("myLightbox").style.display = "none";
+}
+
+/* next i prev button*/
+function prevNextSlide(n){
+  currentSlide(slideIndex+=n);
+}
+
+function expand(){
+	  var z=document.getElementById("imgSlide");
+   var y=document.getElementById("exsp");
+  if(z.style.width==="100%"){
+  z.style.width="70%";
+  }else{
+  z.style.width="100%";
+  }
+  y.classList.toggle("fa-compress");
+}
+
+function openSearch(){
+   location.href = "search.html";
+}
+</script>
+
+</body>
+
+</html>

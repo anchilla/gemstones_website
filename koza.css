@@ -1,0 +1,323 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.naslov{
+	background:  #9D8AC7;
+  text-align: center;
+  /* url("images/drvozivotaame1.jpg")*/
+ background-image: url("images/cilibar22F.jpg");
+
+  background-position: right, left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 500px;
+  padding-top: 200px;
+}
+.naslov{
+font-family: Helvetica, sans-serif;
+}
+.naslov h1{
+	font-family: 'Times New Roman', serif;
+	color: white;
+	font-size: 60px;
+}
+footer{
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	border-top-style: solid;
+	border-top-color: #e0e0eb;
+	border-width: 1px;
+}
+footer p{
+	padding: 20px 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+footer p a{
+		text-decoration: none;
+	color: #14141f;
+}
+.footer_kontakt{
+	padding: 25px 0;
+	   line-height: 200%;
+}
+.insta:hover{
+	text-decoration: underline;
+	color: #14141f;
+}
+
+/*IE10+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+.navbar{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.naslov h1{
+	font-size: 80px;
+}
+.naslov p{
+	color: white;
+	font-size: 23px;
+}
+.uvod p{
+	font-size: 21px;
+}
+.uvod h3{
+	font-size: 29px;
+}
+.uvod hr{
+	width: 15%;
+	margin: auto;
+}
+.text_ispod p{
+	font-size: 20px;
+	padding: 20px 0;
+}
+footer p{
+	font-size: 19px;
+}
+.backtop{
+	font-size: 20px;
+}
+}
+
+
+@media only screen and (max-width: 1050px) {
+	.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 25%;
+}
+.proizvodi{
+	width: 99%;
+	padding: 15px;
+}
+
+.proizvodi .image{
+	margin: 10px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 17px;
+
+}
+}
+
+@media only screen and (max-width: 768px) {
+.naslov{
+  min-height: 350px;
+  padding-top: 140px;
+}
+.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 25%;
+}
+.proizvodi{
+	width: 99%;
+	padding: 15px;
+}
+
+.proizvodi .image{
+	margin: 10px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+	.text{
+		padding-left: 40px;
+	}
+.text ul li{
+	text-align: left;
+}
+
+.o_nama{
+	padding: 30px 20px;
+}
+footer p{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 680px) {
+.text ul li{
+	width: 140px;
+	font-size: 18px;
+}
+}
+@media only screen and (max-width: 570px) {
+.naslov{
+  min-height: 350px;
+  padding-top: 140px;
+}
+	.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+	.text{
+		padding-left: 20px;	
+	}
+}
+
+
+@media only screen and (max-width: 520px) {
+.text{
+	text-align: left;
+	padding: 7px 25px 0;
+}
+
+.text ul li{
+	display: block;
+	text-align: left;
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 488px) {
+.naslov{
+	 min-height: 250px;
+  padding-top: 80px;
+	}
+.naslov h1{
+	font-size: 60px;
+}
+	.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 35%;
+}
+.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 15px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 16px;
+}
+
+footer p{
+	font-size: 15px;
+}
+}
+@media only screen and (max-width: 360px) {
+
+.naslov{
+	 min-height: 200px;
+  padding-top: 60px;
+	}
+.naslov h1{
+	font-size: 55px;
+}
+.uvod p{
+	display: none;
+}
+.uvod hr{
+	width: 40%;
+}
+
+.proizvodi{
+	width: 99%;
+}
+
+.proizvodi .image{
+	margin: 5px;
+	width: 46%;
+}
+
+.text_ispod p{
+		font-size: 14px;
+	padding: 5px 0;
+}
+.onama_text{
+	text-align: center;
+	width: 100%;
+	float: top;
+	font-size: 16px;
+}
+
+footer p{
+	font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+.naslov{
+	 min-height: 160px;
+  padding-top: 50px;
+	}
+.naslov h1{
+	font-size: 45px;
+}
+.naslov p{
+	font-size: 17px;
+}
+
+.uvod h3{
+	font-size: 20px;
+}
+.uvod hr{
+	width: 47%;
+}
+.uvod p{
+	display: none;
+}
+.proizvodi{
+	width: 95%;
+}
+
+.proizvodi .image{
+	margin: 7px;
+	width: 90%;
+}
+
+.text_ispod p{
+		font-size: 14px;
+	padding: 5px 0;
+}
+
+.text{
+	padding: 7px 25px 0;
+}
+.text ul li{
+	font-size: 14px;
+}
+.backtop{
+	font-size: 16px;
+}
+footer p{
+	font-size: 14px;
+}
+}

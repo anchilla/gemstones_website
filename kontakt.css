@@ -1,0 +1,295 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.naslov{
+	background:  #9D8AC7;
+  text-align: center;
+  /* url("images/drvozivotaame1.jpg")*/
+ background-image: url("images/kamenFilter.jpg");
+
+  background-position: right, left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 300px;
+ padding-top: 110px;
+}
+.naslov{
+font-family: Helvetica, sans-serif;
+}
+.naslov h1{
+	font-family: 'Times New Roman', serif;
+	color: white;
+	font-size: 60px;
+}
+.naslov p{
+	color: white;
+	font-size: 20px;
+}
+p{
+	margin: 0;
+}
+.kontakt{
+	width: 50%;
+	float: left;
+}
+.kontakt p{
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	padding: 75px 0 50px 150px;
+}
+.kontakt p a{
+	text-decoration: none;
+	color: #14141f;
+}
+.kontakt p a:hover{
+	text-decoration: underline;
+	color: #14141f;
+}
+.loc_img{
+width: 50%;
+	float: right;
+}
+.lokacija{
+	float: right;
+	margin-right: 80px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.lokacija2{
+	display: none;
+}
+.loc_info{
+	width: 100%;
+	margin: 0;
+  content: "";
+  clear: both;
+  display: table;
+}
+footer{
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	border-top-style: solid;
+	border-top-color: #e0e0eb;
+	border-width: 1px;
+}
+footer p{
+	padding: 20px 0;
+	margin-bottom: 0;
+}
+footer p a{
+		text-decoration: none;
+	color: #14141f;
+}
+.footer_kontakt{
+	padding: 25px 0;
+	   line-height: 200%;
+	   font-size: 16px;
+}
+.foot_p{
+font-size: 16px;
+}
+.insta:hover{
+	text-decoration: underline;
+	color: #14141f;
+}
+.back{
+	font-family: Verdana, sans-serif;
+	text-align: center;
+		padding: 20px 0;
+}
+.backtop{
+	right: 0;
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+}
+.backtop:hover{
+	color: black;
+	text-decoration: underline black;
+}
+
+/*IE10+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+.navbar{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.naslov h1{
+	font-size: 80px;
+}
+.kontakt p{
+	text-align: center;
+	padding: 75px 20px 50px 180px;
+}
+.lokacija{
+	margin-top: 60px;
+	margin-left: 20px;
+		margin-right: 180px;
+	}
+footer p{
+	font-size: 21px;
+}
+}
+@media only screen and (min-width: 1910px) {
+.kontakt p{
+	text-align: center;
+	font-size: 30px;
+	padding: 85px 20px 50px 180px;
+}
+.lokacija{
+	display: none;
+}
+.lokacija2{
+	display: block;
+	float: right;
+		margin-top: 60px;
+	margin-left: 20px;
+		margin-right: 180px;
+		margin-bottom: 30px;
+}
+}
+
+@media only screen and (max-width: 1110px) {
+
+.kontakt p{
+	padding: 60px 0 30px 80px;
+}
+
+.lokacija{
+	width: 60%;
+
+	margin-right: 80px;
+	margin-bottom: 20px;
+}
+	}
+
+	@media only screen and (max-width: 950px) {
+.kontakt p{
+	padding: 65px 0 30px 20px;
+}
+
+.lokacija{
+	width: 70%;
+	float: right;
+	margin-right: 40px;
+}
+	}
+footer p{
+	font-size: 15px;
+}
+
+	@media only screen and (max-width: 820px) {
+
+.loc_info{
+	width: 100%;
+
+  display: block;
+}
+.kontakt{
+	width: 100%;
+	top: 0;
+	float: none;
+}
+.kontakt p{
+	font-size: 
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	padding: 75px 20px 30px 20px;
+}
+.loc_img{
+	width: 50%;
+	margin: auto;
+	float: none;
+}
+.lokacija{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	float: none;
+	
+}
+	}
+
+@media only screen and (max-width: 768px) {
+footer p{
+	font-size: 15px;
+}
+}
+
+	@media only screen and (max-width: 600px) {
+	.kontakt p{
+		font-size: 20px;
+		padding: 75px 20px 30px 20px;
+	}
+	.loc_img{
+	width: 65%;
+}
+}
+
+@media only screen and (max-width: 488px) {
+.naslov{
+	 min-height: 200px;
+  padding-top: 70px;
+	}
+.naslov h1{
+	font-size: 55px;
+}
+footer p{
+	font-size: 15px;
+}
+}
+	@media only screen and (max-width: 460px) {
+	.kontakt p{
+		font-size: 18px;
+		padding-top: 20px;
+	}
+}
+
+	@media only screen and (max-width: 416px) {
+	.kontakt p{
+		font-size: 17px;
+	}
+.loc_img{
+	width: 80%;
+
+}
+}
+@media only screen and (max-width: 360px) {
+.naslov{
+	 min-height: 200px;
+  padding-top: 60px;
+	}
+.naslov h1{
+	font-size: 55px;
+}
+footer p{
+	font-size: 14px;
+}
+}
+	@media only screen and (max-width: 320px) {
+	.kontakt p{
+		font-size: 15px;
+	}
+
+.naslov{
+	 min-height: 160px;
+  padding-top: 45px;
+	}
+.naslov h1{
+	font-size: 45px;
+}
+.backtop{
+	font-size: 16px;
+}
+footer p{
+	font-size: 14px;
+}
+}
+
